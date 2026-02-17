@@ -9,6 +9,9 @@ respective folders.
 ### uv
 If possible, work with [uv](https://astral.sh/uv/). Clone the repository and run `uv sync`.
 
+
+Update pyproject.toml for MacOS Arm64
+
 ### anaconda or pip
 
 Create an venv or conda environment and install the following packages:
@@ -57,3 +60,12 @@ You can either try to run the notebooks directly
 or try to follow how I run them and use it as a
 documentation (or run it later).
 
+---
+
+## macOS Arm64 Environment Setup
+Repository optimized for local development on Apple Silicon (M3 Max). 
+This setup replaces NVIDIA-specific dependencies with Apple-native frameworks 
+to utilize Unified Memory and Metal acceleration.
+
+- Hardware: MacBook Pro M3 Max (36GB Unified Memory).
+- Update `pyproject.toml` to remove NVIDIA-specific packages and add Apple-native alternatives.
